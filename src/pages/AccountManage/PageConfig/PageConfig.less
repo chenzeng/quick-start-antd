@@ -1,0 +1,67 @@
+@import '~antd/lib/style/themes/default.less';
+//@import '~@/utils/utils.less';
+
+.pageConfig {
+  .box {
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    min-height: 350px;
+    .boxTitle {
+      padding: 15px;
+      text-align: center;
+      line-height: 32px;
+    }
+  }
+  .rightContextMenu {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    overflow: hidden;
+    :global {
+      .react-contextmenu-item {
+        padding: 5px 15px;
+        min-width: 140px;
+        border-bottom: 1px solid #dddddd;
+        cursor: pointer;
+      }
+      .react-contextmenu-item:hover {
+        color: #00aeff;
+        background: #e6f7ff;
+      }
+    }
+  }
+  .multiBox {
+    .inputList {
+      background: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      padding: 10px;
+      .inputItem {
+        background: #f0f2f5;
+        border: 1px solid #dddddd;
+        border-radius: 6px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+    }
+    .removeButton {
+      cursor: pointer;
+      position: relative;
+      top: 6px;
+      font-size: 24px;
+      color: #999;
+      transition: all .3s;
+      margin-left: 15px;
+    }
+    .removeButton:hover {
+      color: #777;
+    }
+    .removeButton[disabled] {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+}
