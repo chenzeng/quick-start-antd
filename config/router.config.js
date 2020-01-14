@@ -41,6 +41,19 @@ export default [
           },
         ],
       },
+      // 实例
+      {
+        path: '/demo',
+        name: 'demo',
+        icon: 'dashboard',
+        routes: [
+          {
+            path: '/demo/searchlist',
+            name: 'searchList',
+            component: './Demo/SearchList/SearchList',
+          },
+        ],
+      },
       // forms
       {
         path: '/form',

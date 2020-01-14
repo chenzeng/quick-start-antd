@@ -1,0 +1,67 @@
+@import '~antd/lib/style/themes/default.less';
+//@import '~@/utils/utils.less';
+
+.shelfManagement {
+  :global {
+    .ant-calendar-picker {
+      min-width: 160px !important;
+    }
+  }
+  .inputBar {
+    padding: 10px 10px;
+  }
+  .btnBar {
+    padding-left: 20px;
+    button {
+      margin-left: 14px;
+    }
+  }
+  .labelStyle {
+    line-height: 32px;
+    text-align: right;
+    display: inline-block;
+    flex: 0 0 auto;
+  }
+  .tableBox {
+    padding-top: 10px;
+    .tableBtn {
+      a {
+        margin-left: 8px;
+      }
+    }
+    .category {
+      max-width: 108px;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+    .inlineLabel {
+      position: relative;
+      padding-left: 50px;
+      height: 32px;
+      .labelText {
+        position: absolute;
+        left: 5px;
+        top: 0;
+        display: inline-block;
+        line-height: 32px;
+      }
+    }
+    .warnningFlag{
+      color:red;
+    }
+    .leftSection{
+      display: inline-block;
+      img{
+        width:160px;
+        height:110px;
+      }
+    }
+    .rightSection{
+      display: inline-block;
+      text-align: left;
+      margin-left: 15px;
+    }
+  }
+}
+

@@ -108,36 +108,36 @@ class BasicLayout extends React.PureComponent {
       type: 'setting/getSetting',
     });
     // 用户信息
-    dispatch({
-      type: 'menu/getUserInfo',
-      payload: {},
-      callback: res => {
-        const { code, data, msg } = res;
-        if (code !== 200) {
-          message.error(msg);
-        }
-      },
-    });
-    this.getUserMenuData();
+    // dispatch({
+    //   type: 'menu/getUserInfo',
+    //   payload: {},
+    //   callback: res => {
+    //     const { code, data, msg } = res;
+    //     if (code !== 200) {
+    //       message.error(msg);
+    //     }
+    //   },
+    // });
+    // this.getUserMenuData();
     // this.setState({
     //   menuData: memoizeOneFormatter([]),
     // }, () => {
     //   this.getUserMenuData();
     // })
     
-    this.renderRef = requestAnimationFrame(() => {
-      this.setState({
-        rendering: false,
-      });
-    });
-    this.enquireHandler = enquireScreen(mobile => {
-      const { isMobile } = this.state;
-      if (isMobile !== mobile) {
-        this.setState({
-          isMobile: mobile,
-        });
-      }
-    });
+    // this.renderRef = requestAnimationFrame(() => {
+    //   this.setState({
+    //     rendering: false,
+    //   });
+    // });
+    // this.enquireHandler = enquireScreen(mobile => {
+    //   const { isMobile } = this.state;
+    //   if (isMobile !== mobile) {
+    //     this.setState({
+    //       isMobile: mobile,
+    //     });
+    //   }
+    // });
   }
 
   getUserMenuData = () => {

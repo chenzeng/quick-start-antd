@@ -1,5 +1,5 @@
-let targetAdmin = 'http://172.20.19.14:8000/'; // 向柯
-let targetBase = 'http://172.20.19.14:8000/'; // 向柯
+let targetAdmin = 'http://172.20.19.14:8000/'; // 服务端ip
+let targetBase = 'http://172.20.19.14:8000/'; // 
 export default {
   define: {
     // 添加这个自定义的环境变量

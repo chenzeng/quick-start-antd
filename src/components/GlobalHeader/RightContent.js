@@ -153,9 +153,11 @@ export default class GlobalHeaderRight extends PureComponent {
               <span className={styles.name}>{currentUserData.userName}</span>
             </span>
           </Dropdown>
-        ) : (
-          <Spin size="small" style={{ marginLeft: 8, marginRight: 8 }} />
-        )}
+        ) :<span className={styles.name}>Admin</span>
+        // (
+        //   <Spin size="small" style={{ marginLeft: 8, marginRight: 8 }} />
+        // )
+        }
         <SelectLang className={styles.action} />
       </div>
     );

@@ -11,6 +11,8 @@ export default {
   'menu.accountManage.accountManage.edit': '编辑用户',
   'menu.accountManage.accountManage.view': '查看用户',
 
+  'menu.demo': '示例',
+  'menu.demo.searchList': '搜索表格',
   // 表格实例
   'menu.tableDemo': '表格实例',
 

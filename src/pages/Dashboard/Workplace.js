@@ -215,7 +215,7 @@ class Workplace extends PureComponent {
               bordered={false}
               bodyStyle={{ padding: 0 }}
             >
-              <EditableLinkGroup onAdd={() => {}} links={links} linkElement={Link} />
+              {/* <EditableLinkGroup onAdd={() => {}} links={links} linkElement={Link} /> */}
             </Card>
             <Card
               style={{ marginBottom: 24 }}
